@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A quick guide to set up **yt-dlp** and **FFmpeg** on Windows, manually add them to your system `PATH`, and locate the **Cloudflare Stream video ID** required by the `cf_download.bat` script.
+A quick guide to set up **yt-dlp** and **FFmpeg** on Windows, manually add them to your system `PATH`, and locate the **Cloudflare Stream video ID** required by the Python downloader script.
 
 ---
 
@@ -90,22 +90,27 @@ Example:
 
 ---
 
-## 5. How to Use `cf_download.bat`
+## 5. How to Use the Python Downloader Script
 
-1. Double-click `cf_download.bat`
+1. Run the script `cloudflare_downloader.py` using Python
 
-2. Enter the Cloudflare Stream video ID
+2. Choose video source:
 
-3. (Optional) Enter the output filename (without `.mp4`)
+   * `1` for Cloudflare Stream
+   * `2` for YouTube
 
-4. The downloaded video will be saved to:
+3. Provide the required video ID or URL
+
+4. (Optional) Enter a custom output filename (no `.mp4` needed)
+
+5. The downloaded video will be saved to:
 
    ```
    %USERPROFILE%\Documents\cfdownloader
    ```
 
-5. Press any key to exit once finished
+6. Press any key to continue downloading or type `exit` to quit
 
 ---
 
-🎉 Done! You can now download Cloudflare Stream videos quickly and safely from your terminal.
+🎉 Done! You can now download Cloudflare Stream or YouTube videos quickly and safely using your terminal.
